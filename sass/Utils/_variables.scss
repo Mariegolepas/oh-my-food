@@ -1,6 +1,9 @@
 $white : #fff;
-$dark-grey : #353535;
 $black: #000;
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$grey : darken($white, 10%);
+$light-grey: darken($white, 5%);
+$middle-grey: darken($white, 40%);
+$dark-grey : lighten($black, 20%);

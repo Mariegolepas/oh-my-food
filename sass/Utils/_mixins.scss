@@ -1,0 +1,32 @@
+@mixin btn-degrade($clr1,$clr2) {
+    width: 215px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to top left, $clr1, $clr2);
+    box-shadow: 2px 2px 10px $middle-grey;
+}
+
+@mixin text-white {
+    color: $white;
+    font-size: 15px;
+}
+
+@mixin btn-hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px $middle-grey;
+}
+
+@mixin btn-active($clr1,$clr2) {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px $dark-grey;
+    background: linear-gradient(to top left, $clr2, $clr1);
+}
+
+@mixin shadow($clr) {
+    box-shadow: 2px 2px 10px $clr;
+}
+
+@mixin bloc-hover($clr) {
+    background-color: lighten($clr, 25%);
+}
