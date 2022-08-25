@@ -1,18 +1,1 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     background-color: $dark-grey;
- *   |                       ^^^^^^^^^^
- *   '
- *   sass\Layout\_footer.scss 4:23  @import
- *   sass\main.scss 9:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      background-color: $dark-grey;\d\a   \2502                        ^^^^^^^^^^\a   \2575 \a   sass\\Layout\\_footer.scss 4:23  @import\a   sass\\main.scss 9:9             root stylesheet";
-}
+@import"https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap";*{font-family:"Roboto",sans-serif}h1,h2,h3,h4{font-family:"Shrikhand",cursive}::before,::after,*{box-sizing:border-box;padding:0;margin:0}a{text-decoration:none}a:visited{text-decoration:none}a:hover{text-decoration:none}a:active{text-decoration:none}.header{display:flex;justify-content:center;align-items:center;height:65px;width:100%}.footer{padding:25px;list-style-type:none;background-color:#353535;color:#fff}.footer__title{font-size:20px;color:#fff;font-weight:300;padding-bottom:20px}.footer__list{list-style-type:none;line-height:25px}.footer__list a{color:#fff}.footer__list--bold{font-weight:600}.nav{display:flex;justify-content:center;align-items:center;height:50px;width:100%}.nav__place{padding:10px;color:#353535}.nav__form{border:0px solid #fff;color:#353535;height:50px;text-align:center;font-size:20px;font-weight:bold}.nav__form:focus-visible{border:0px solid #fff}/*# sourceMappingURL=style.css.map */

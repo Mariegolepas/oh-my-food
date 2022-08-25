@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    &__place {
+        padding: 10px;
+        color: $dark-grey;
+    }
+    &__form {
+        border: 0px solid $white;
+        color: $dark-grey;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        &:focus-visible {
+            border: 0px solid $white;
+        }
+    }
+}

@@ -7,22 +7,25 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 992px) and (min-width: 769px)" href="css/tablette.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/desktop.css">
-    <title>OhMyFood - Home</title>
+    <title>Oh My Food - Accueil</title>
 </head>
 <body>
     <header class="header">
         <a href="/index.html"><img src="/images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food"></a>
     </header>
 
-    <form action=""><i class="fa-solid fa-location-dot"></i></form>
+    <nav class="nav">
+        <i class="fa-solid fa-location-dot nav__place"></i>
+        <input type="text" value="Paris, Belleville" class="nav__form"/>
+    </nav>
 
     <footer class="footer">
-        <a href="/index.html"><img src="/images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food"></a>
+        <a href="/index.html"><h1 class="footer__title">ohmyfood</h1></a>
         <ul class="footer__list">
-            <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
-            <li><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <li><a href="#" class="footer__list--bold"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+            <li><a href="#" class="footer__list--bold"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </footer>
 </body>
