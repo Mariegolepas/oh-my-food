@@ -69,7 +69,7 @@
     color: $white;
 }
 
-.center__fctmt__bloc__center:hover .center__fctmt__bloc__center__icon {
+.center__fctmt__bloc:hover .center__fctmt__bloc__center__icon {
     color: $color-primary;
 }
 
@@ -141,12 +141,22 @@
     right: 25px;
     top: 25px;
     font-size: 25px;
+    z-index: 1;
+    color: $color-primary;
 }
 
 .resto__card__heartfull {
-    display: none;
+    transform: scale(1,0);
     position: absolute;
     right: 25px;
     top: 25px;
+    z-index: 2;
     font-size: 25px;
+    color: $color-secondary;
 }
+
+.resto__card__heartempty:hover + .resto__card__heartfull {
+        transform: scale(1.1,1.1);
+        transition: all 2s ease-in;
+        color: $color-secondary;
+    }

@@ -4,7 +4,7 @@
         @include text-white;
     }
     &:hover {
-        @include btn-hover;
+        @include btn-hover($color-primary,$color-secondary);
     }
     &:active {
         @include btn-active($color-primary,$color-secondary)

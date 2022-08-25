@@ -4,7 +4,7 @@
     border-radius: 25px;
     border: none;
     background: linear-gradient(to top left, $clr1, $clr2);
-    box-shadow: 2px 2px 10px $middle-grey;
+    box-shadow: 2px 2px 10px $grey-smooth;
 }
 
 @mixin text-white {
@@ -12,14 +12,17 @@
     font-size: 15px;
 }
 
-@mixin btn-hover {
+@mixin btn-hover($clr1,$clr2) {
+    $clr3: lighten($clr1, 5%);
+    $clr4: lighten($clr2, 5%);
     cursor: pointer;
-    box-shadow: inset 0px 0px 10px $middle-grey;
+    background: linear-gradient(to top left, $clr3, $clr4);
+    box-shadow: 2px 2px 8px $middle-grey;
 }
 
 @mixin btn-active($clr1,$clr2) {
     cursor: pointer;
-    box-shadow: inset 0px 0px 10px $dark-grey;
+    box-shadow: inset 0px 0px 15px $dark-grey;
     background: linear-gradient(to top left, $clr2, $clr1);
 }
 
