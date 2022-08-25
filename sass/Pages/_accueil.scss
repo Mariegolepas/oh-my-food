@@ -85,10 +85,13 @@
 .resto {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 30px;
+    background-color: $light-grey;
 }
 /* Cards */
-
 .resto__card {
     display: flex;
     flex-direction: column;
@@ -96,24 +99,24 @@
     height: 250px;
     border-radius: 15px;
     overflow: hidden;
+    @include shadow($middle-grey)
 }
 
 .resto__card__top {
     position: relative;
-    z-index: 1;
     width: 100%;
-    height: 200px;
+    height: 175px;
     & img {
         object-fit: cover;
         width: 100%;
         height: 250px;
-        object-position: 0 -50px;
+        margin-top: -55px;
     }
     &__new {
         position: absolute;
         top: 15px;
         right: 15px;
-        width: 80px;
+        width: 85px;
         padding: 5px;
         color: darken($color-tertiary, 35%);
         font-weight: bold;
@@ -123,8 +126,27 @@
 }
 
 .resto__card__bottom {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: relative;
-    z-index: 2;
-    height: 70px;
+    bottom: 0px;
+    height: 33%;
     background-color: $white;
+    padding: 15px;
+}
+
+.resto__card__heartempty {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+}
+
+.resto__card__heartfull {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
 }
