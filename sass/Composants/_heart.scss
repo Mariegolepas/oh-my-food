@@ -1,0 +1,60 @@
+/* Animation Coeur */
+.resto__card__heart {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.resto__card__heart__empty {
+    z-index: 1;
+    font-size: 25px;
+    color: $color-primary;
+}
+
+.resto__card__heart__full {
+    transform: scale(0,0);
+    z-index: 2;
+    font-size: 25px;
+    background: linear-gradient(to bottom left, $color-primary, $color-secondary);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.resto__card__heart:hover .resto__card__heart__full {
+        transform: scale(1.1,1.1);
+        transition: all 2s ease-in;
+        animation: animcoeur 0.5s ease-in-out forwards;
+}
+
+@keyframes animcoeur {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-9px);
+        opacity: 0;
+    }
+    75% {
+        opacity: 15%;
+    }
+    100% {
+        transform: translateY(-26px);
+        opacity: 100%;
+    }
+}
+
+/* @keyframes animcoeur {
+    from {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */

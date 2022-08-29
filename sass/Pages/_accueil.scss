@@ -99,7 +99,11 @@
     height: 250px;
     border-radius: 15px;
     overflow: hidden;
-    @include shadow($middle-grey)
+    color: $black;
+    @include shadow($middle-grey);
+    &:hover {
+        color: $color-primary;
+    }
 }
 
 .resto__card__top {
@@ -135,28 +139,3 @@
     background-color: $white;
     padding: 15px;
 }
-
-.resto__card__heartempty {
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    font-size: 25px;
-    z-index: 1;
-    color: $color-primary;
-}
-
-.resto__card__heartfull {
-    transform: scale(1,0);
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    z-index: 2;
-    font-size: 25px;
-    color: $color-secondary;
-}
-
-.resto__card__heartempty:hover + .resto__card__heartfull {
-        transform: scale(1.1,1.1);
-        transition: all 2s ease-in;
-        color: $color-secondary;
-    }
