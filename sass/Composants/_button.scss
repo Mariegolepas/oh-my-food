@@ -1,0 +1,12 @@
+.center__main__btn {
+    @include btn-degrade($color-primary,$color-secondary);
+    &__txt {
+        @include text-white;
+    }
+    &:hover {
+        @include btn-hover($color-primary,$color-secondary);
+    }
+    &:active {
+        @include btn-active($color-primary,$color-secondary)
+    }
+}

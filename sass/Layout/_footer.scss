@@ -1,0 +1,24 @@
+.footer {
+    padding: 25px;
+    list-style-type: none;
+    background-color: $dark-grey;
+    color: $white;
+    &__title {
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        color: white;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+}
+
+.footer__list {
+    list-style-type: none;
+    line-height: 25px;
+    a {
+        color: $white;
+    }
+    &--bold {
+        font-weight: bold;
+    }
+}
