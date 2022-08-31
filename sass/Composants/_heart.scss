@@ -27,6 +27,7 @@
         transform: scale(1.1,1.1);
         transition: all 2s ease-in;
         animation: animcoeur 0.5s ease-in-out forwards;
+        cursor: pointer;
 }
 
 @keyframes animcoeur {

@@ -5,14 +5,18 @@
 }
 
 a {
+    color: initial;
     text-decoration: none;
     &:visited {
+        color: initial;
         text-decoration: none;
     }
     &:hover {
+        color: initial;
         text-decoration: none;
     }
     &:active {
+        color: initial;
         text-decoration: none;
     }
 }

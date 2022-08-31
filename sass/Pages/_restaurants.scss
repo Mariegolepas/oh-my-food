@@ -6,7 +6,7 @@
 
 /* Image d'arrière plan */
 .page__bg {
-    position: absolute;
+    position: ralative;
     z-index: 1;
     & img {
         width: 100%;
@@ -14,11 +14,11 @@
 }
 
 .page__content {
-    position: absolute;
+    position: relative;
     z-index: 2;
     width: 100%;
     background-color: $grey;
-    margin-top: 200px;
+    margin-top: -20%;
     padding: 3%;
     border-radius: 40px 40px 0 0;
 }
@@ -56,6 +56,7 @@
         background-color: $white;
         border-radius: 15px;
         overflow: hidden;
+        max-width:100%;
         @include shadow($middle-grey);
         &__txt {
             padding: 15px;  
@@ -107,7 +108,7 @@
     }
 
     &:hover &__check {
-        width: 60px;
+        width: 50px;
         color: $white;
         margin-left: 40px;
     }

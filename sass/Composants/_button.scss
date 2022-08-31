@@ -14,19 +14,28 @@
 .page__content__btn {
     display: flex;
     justify-content: center;
-    @include btn-degrade($color-primary,$color-secondary);
-    &__txt {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    &__btn {
+        @include btn-degrade($color-primary,$color-secondary);
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 25px;
-        font-weight: 500;
-        @include text-white;
-    }
-    &:hover {
-        @include btn-hover($color-primary,$color-secondary);
-    }
-    &:active {
-        @include btn-active($color-primary,$color-secondary)
+        &__txt {
+            @include text-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 400;
+            
+        }
+        &:hover {
+            @include btn-hover($color-primary,$color-secondary);
+        }
+        &:active {
+            @include btn-active($color-primary,$color-secondary)
+        }
     }
 }
