@@ -1,0 +1,140 @@
+/* Section globale des pages restaurants */
+.page {
+    position: relative;
+    max-width: 768px;
+}
+
+/* Image d'arrière plan */
+.page__bg {
+    position: absolute;
+    z-index: 1;
+    & img {
+        width: 100%;
+    }
+}
+
+.page__content {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background-color: $grey;
+    margin-top: 200px;
+    padding: 3%;
+    border-radius: 40px 40px 0 0;
+}
+
+.page__content__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 25px;
+    font-size: 20px;
+    &__h2 {
+        font-family: 'Shrikhand', cursive;
+        /* font-size: 25px; */
+    }
+    &__heart {
+        /* font-size: 25px; */
+    }
+}
+
+.page__content__bloc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    margin-top: 40px;
+    &__h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    &__food {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        background-color: $white;
+        border-radius: 15px;
+        overflow: hidden;
+        @include shadow($middle-grey);
+        &__txt {
+            padding: 15px;  
+            max-width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            transition: width 1s ease-in-out;
+
+            & h3 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            & p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.page__content__bloc__food {
+    animation: translateCard 1s forwards;
+    &__price {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    max-width: 30%;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    &__check {
+        display:flex; 
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        background-color: $color-tertiary;
+        height: 100%;
+        width: 0;
+        font-size: 25px;
+    }
+
+    &:hover &__price {
+        width: 85px;
+    }
+
+    &:hover &__check {
+        width: 60px;
+        color: $white;
+        margin-left: 40px;
+    }
+
+    &:hover i {
+        transform: rotate(90deg);
+        animation: checkRotate 0.2s 0.2s forwards;
+    }
+}
+
+@keyframes checkRotate {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes translateCard {
+    from{
+        visibility: hidden;
+        transform: translateY(100%);
+    }
+    to{
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}
