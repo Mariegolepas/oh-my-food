@@ -96,9 +96,11 @@
         overflow: hidden;
         max-width:100%;
         @include shadow($middle-grey);
+        cursor: pointer;
         &__txt {
             padding: 15px;  
-            max-width: 90%;
+            width: 100%;
+            max-width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -117,19 +119,29 @@
                 text-overflow: ellipsis;
             }
         }
+
+        &__dsc {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &__price {
+                font-weight: bold;
+            }
+        }
     }
 }
 
 .page__content__bloc__food {
     animation: translateCard 1s forwards;
-    &__price {
+    /* &__dsc__price {
     position: absolute;
     right: 20px;
     bottom: 15px;
     max-width: 30%;
     font-weight: bold;
     cursor: pointer;
-    }
+    } */
     &__check {
         display:flex; 
         justify-content: center;
@@ -141,14 +153,15 @@
         font-size: 25px;
     }
 
-    &:hover &__price {
-        width: 85px;
+    &:hover &__dsc {
+        max-width: 90%;
     }
 
     &:hover &__check {
-        width: 50px;
+        width: 75px;
         color: $white;
-        margin-left: 40px;
+        animation: checkbox 0.2s ease-in-out forwards;
+        transition: all 0.2s ease-in-out;
     }
 
     &:hover i {
@@ -157,23 +170,3 @@
     }
 }
 
-@keyframes checkRotate {
-    from {
-        transform: rotate(90deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes translateCard {
-    from{
-        visibility: hidden;
-        transform: translateY(100%);
-    }
-    to{
-        visibility: visible;
-        transform: translateY(0%);
-    }
-}

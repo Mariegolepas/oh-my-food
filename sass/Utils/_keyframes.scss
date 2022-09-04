@@ -33,3 +33,42 @@
         opacity: 100%;
     }
 }
+
+@keyframes checkRotate {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes translateCard {
+    from{
+        visibility: hidden;
+        transform: translateY(100%);
+    }
+    to{
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes checkbox {
+    0% {
+        transform: translateZ(0);
+        opacity: 0;
+    }
+    30% {
+        transform: translateZ(-9px);
+        opacity: 10%;
+    }
+    75% {
+        opacity: 15%;
+    }
+    100% {
+        transform: translateZ(-27px);
+        opacity: 100%;
+    }
+}
