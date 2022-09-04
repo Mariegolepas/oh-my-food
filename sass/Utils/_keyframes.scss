@@ -1,0 +1,35 @@
+@keyframes animcoeur {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-9px);
+        opacity: 0;
+    }
+    75% {
+        opacity: 15%;
+    }
+    100% {
+        transform: translateY(-26.5px);
+        opacity: 100%;
+    }
+}
+
+@keyframes animcoeur2 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-9px);
+        opacity: 0;
+    }
+    75% {
+        opacity: 15%;
+    }
+    100% {
+        transform: translateY(-27px);
+        opacity: 100%;
+    }
+}

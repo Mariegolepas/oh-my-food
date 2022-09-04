@@ -29,12 +29,45 @@
     align-items: baseline;
     padding-top: 25px;
     font-size: 20px;
+    
     &__h2 {
         font-family: 'Shrikhand', cursive;
+        font-weight: 400;
         /* font-size: 25px; */
     }
+
     &__heart {
-        /* font-size: 25px; */
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 25px;
+        height: 25px;
+        font-weight: 200;
+        cursor: pointer;
+
+        &__empty {
+            z-index: 1;
+            font-size: 25px;
+            font-weight: 100;
+            color: $black;
+        }
+
+        &__full {
+            transform: scale(0,0);
+            z-index: 2;
+            font-size: 25px;
+            background: linear-gradient(to bottom left, $color-primary, $color-secondary);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        &:hover &__full {
+            transform: scale(1.5,1.5);
+            transition: all 2s ease-in;
+            animation: animcoeur2 0.5s ease-in-out forwards;
+            cursor: pointer;
+        }
     }
 }
 
@@ -48,6 +81,11 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 20px;
+
+        &::before {
+            width: 40px;
+            border-bottom: 3px solid $color-tertiary;
+        }
     }
     &__food {
         display: flex;
