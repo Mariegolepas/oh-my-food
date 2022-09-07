@@ -127,9 +127,15 @@
     }
 }
 
-.page__content__bloc__food {
-    animation: translateCard 1s forwards;
+@each $key, $value in $visibility-delay {
+    .page__content__bloc--#{$key} {
+        opacity: 0;
+        animation: visibilities $visibility-animation ease-in-out forwards;
+        animation-delay: $value;
+    }
+}
 
+.page__content__bloc__food {
     &__dsc {
         display: flex;
         justify-content: space-between;
@@ -174,4 +180,3 @@
         animation: checkRotate 1s 0.5s forwards;
     }
 }
-

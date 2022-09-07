@@ -14,3 +14,11 @@ $breakpoints: (
     tablette: 992px,
     desktop: 992px,
 );
+
+$visibility-delay: (
+    entry: 0.2s,
+    plats: 0.7s,
+    desserts: 1.2s,
+);
+
+$visibility-animation : 1s;
