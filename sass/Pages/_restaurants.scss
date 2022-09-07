@@ -82,16 +82,6 @@
     position: relative;
     gap: 15px;
     margin-top: 40px;
-    &__h2 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-
-        &::before {
-            width: 40px;
-            border-bottom: 3px solid $color-tertiary;
-        }
-    }
     &__food {
         display: flex;
         justify-content: space-between;
@@ -132,6 +122,22 @@
         opacity: 0;
         animation: visibilities $visibility-animation ease-in-out forwards;
         animation-delay: $value;
+    }
+}
+
+.page__content__bloc__h2 {
+    position: relative;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 5px;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background-color:$color-tertiary;
     }
 }
 

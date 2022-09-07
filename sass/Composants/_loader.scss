@@ -1,0 +1,42 @@
+.loading {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-grey;
+    opacity: 00;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 3s ease-in-out;
+}
+
+.loading__word {
+    text-align: center;
+    align-items: baseline;
+    font-size: 35px;
+    /* width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $color-primary; */
+    margin: 0 15px;
+    animation: loading infinite 0.3s alternate;
+    font-family: 'Shrikhand', cursive;
+}
+
+@each $key, $value in $loading {
+    .loading__word--#{$key} {
+        animation-delay: $value;
+    }
+}
+
+@each $key, $value in $loading-color {
+    .loading__word--#{$key} {
+        color: $value;
+    }
+}
+
+@keyframes loading {
+    100% {
+        transform: translateY(-30px);
+    }
+}
