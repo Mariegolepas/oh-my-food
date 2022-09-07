@@ -1,12 +1,11 @@
 /* Section globale des pages restaurants */
 .page {
     position: relative;
-    /* max-width: 768px; */
 }
 
 /* Image d'arrière plan */
 .page__bg {
-    position: ralative;
+    position: relative;
     z-index: 1;
     & img {
         object-fit: cover;
@@ -93,7 +92,7 @@
         @include shadow($middle-grey);
         cursor: pointer;
         &__txt {
-            padding: 15px;  
+            padding: 15px;
             width: 100%;
             max-width: 100%;
             white-space: nowrap;
@@ -179,6 +178,14 @@
         color: $white;
         animation: checkbox 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         transition: all 1s ease-in-out;
+    }
+
+    &:hover h3 {
+        padding-right: 25px;
+    }
+
+    &:hover &__dsc__dsc {
+        padding-right: 3px;
     }
 
     &:hover i {

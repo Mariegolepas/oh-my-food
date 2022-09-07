@@ -1,13 +1,14 @@
 .loading {
     position: absolute;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $light-grey;
-    opacity: 00;
     width: 100vw;
     height: 100vh;
-    transition: opacity 3s ease-in-out;
+    /* transition: opacity 3s ease-in-out; */
+    animation: visible 3s ease-in-out forwards;
 }
 
 .loading__word {
@@ -38,5 +39,35 @@
 @keyframes loading {
     100% {
         transform: translateY(-30px);
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.75;
+        background-color: #f2f2f2bd;
+    }
+
+    50% {
+        opacity: 0.5;
+        background-color: #f2f2f287;
+    }
+
+    75% {
+        opacity: 0.25;
+        background-color: #f2f2f24d;
+    }
+
+    95% {
+        opacity: 0;
+        background-color: #f2f2f200;
+    }
+
+    100% {
+        z-index: -1;
     }
 }
