@@ -33,3 +33,15 @@
 @mixin bloc-hover($clr) {
     background-color: lighten($clr, 25%);
 }
+
+@mixin tablette {
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

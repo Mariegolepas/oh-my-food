@@ -8,3 +8,9 @@ $grey : darken($white, 10%);
 $grey-smooth : darken($white, 20%);
 $middle-grey : darken($white, 40%);
 $dark-grey : lighten($black, 20%);
+
+$breakpoints: (
+    mobile: 769px,
+    tablette: 992px,
+    desktop: 992px,
+);
