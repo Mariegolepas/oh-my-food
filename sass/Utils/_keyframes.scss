@@ -1,3 +1,4 @@
+/* Anim coeur page d'accueil */
 @keyframes animcoeur {
     0% {
         transform: translateY(0);
@@ -16,6 +17,7 @@
     }
 }
 
+/* Anim coeur page restaurant */
 @keyframes animcoeur2 {
     0% {
         transform: translateY(0);
@@ -30,6 +32,25 @@
     }
     100% {
         transform: translateY(-27px);
+        opacity: 100%;
+    }
+}
+
+/* Anim coeur mediaqueries desktop page resto */
+@keyframes animcoeur3 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-13px);
+        opacity: 0;
+    }
+    75% {
+        opacity: 15%;
+    }
+    100% {
+        transform: translateY(-50px);
         opacity: 100%;
     }
 }
