@@ -1,4 +1,7 @@
 # oh-my-food
-Projet 3 OpenClassrooms "Oh My Food"
+Project 3 OpenClassrooms "Oh My Food"
 
 Project based on CSS animation learning & Sass learning
+
+Project idea owner : Openclassrooms
+Project remade by Mariegolepas
