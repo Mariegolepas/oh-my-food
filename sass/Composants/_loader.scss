@@ -7,7 +7,6 @@
     background-color: $light-grey;
     width: 100vw;
     height: 100vh;
-    /* transition: opacity 3s ease-in-out; */
     animation: visible 3s ease-in-out forwards;
 }
 
@@ -15,10 +14,6 @@
     text-align: center;
     align-items: baseline;
     font-size: 35px;
-    /* width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: $color-primary; */
     margin: 0 15px;
     animation: loading infinite 0.3s alternate;
     font-family: 'Shrikhand', cursive;
@@ -33,41 +28,5 @@
 @each $key, $value in $loading-color {
     .loading__word--#{$key} {
         color: $value;
-    }
-}
-
-@keyframes loading {
-    100% {
-        transform: translateY(-30px);
-    }
-}
-
-@keyframes visible {
-    0% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 0.75;
-        background-color: #f2f2f2bd;
-    }
-
-    50% {
-        opacity: 0.5;
-        background-color: #f2f2f287;
-    }
-
-    75% {
-        opacity: 0.25;
-        background-color: #f2f2f24d;
-    }
-
-    95% {
-        opacity: 0;
-        background-color: #f2f2f200;
-    }
-
-    100% {
-        z-index: -1;
     }
 }

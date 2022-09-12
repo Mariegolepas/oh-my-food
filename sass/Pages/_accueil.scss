@@ -144,10 +144,6 @@
     width: 25px;
     height: 25px;
     color: $white;
-
-    @include desktop {
-        /* width: 40px; */
-    }
 }
 
 .center__fctmt__bloc:hover .center__fctmt__bloc__center__icon {

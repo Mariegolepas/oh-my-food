@@ -55,6 +55,7 @@
     }
 }
 
+/* Anim check page resto */
 @keyframes checkRotate {
     from {
         transform: rotate(90deg);
@@ -82,5 +83,44 @@
     to{
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+/* Loading Screen */
+/* Anim mots */
+@keyframes loading {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Anim disparition */
+@keyframes visible {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.75;
+        background-color: #f2f2f2bd;
+    }
+
+    50% {
+        opacity: 0.5;
+        background-color: #f2f2f287;
+    }
+
+    75% {
+        opacity: 0.25;
+        background-color: #f2f2f24d;
+    }
+
+    99% {
+        opacity: 0;
+        background-color: #f2f2f200;
+    }
+
+    100% {
+        z-index: -1;
     }
 }
