@@ -1,18 +1,157 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/81c4993930.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 992px) and (min-width: 769px)" href="css/tablette.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/desktop.css">
+    <link rel="stylesheet" href="/css/prefixed/style.css">
     <title>Oh My Food - Le délice des sens</title>
 </head>
 <body>
     <header class="header">
+        <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <a href="/index.html"><img src="/images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food"></a>
     </header>
+
+    <section class="page">
+        <div class="page__bg">
+            <img src="/images/restaurants/delice-sens.jpg" alt="Restaurant Le Délice des Sens">
+        </div>
+        <div class="page__content">
+            <div class="page__content__header">
+                <h2 class="page__content__header__h2">Le délice des sens</h2>
+                <div class="resto__card__heart page__content__header__heart">
+                    <i class="fa-regular fa-heart page__content__header__heart__empty"></i>
+                    <i class="fa-solid fa-heart page__content__header__heart__full"></i>
+                </div>
+            </div>
+            <div class="page__content__bloc page__content__bloc--entry"> <!-- Entrées -->
+                <h2 class="page__content__bloc__h2">ENTRÉES</h2>
+
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Tartare de thon</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Assaisonné au yuzu</p>
+                            <p class="page__content__bloc__food__dsc__price">25€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Bouchée de homard croustillant</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Et sa farandole de petits légumes</p>
+                            <p class="page__content__bloc__food__dsc__price">35€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Velouté de cèpes </h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Aux truffes</p>
+                            <p class="page__content__bloc__food__dsc__price">20€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page__content__bloc page__content__bloc--plats"> <!-- Plats -->
+                <h2 class="page__content__bloc__h2">PLATS</h2>
+                
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Poulet rôti aux herbes de Provence</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Et sa crème de truffe</p>
+                            <p class="page__content__bloc__food__dsc__price">40€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Langouste rôtie</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Et ses légumes de saison</p>
+                            <p class="page__content__bloc__food__dsc__price">35€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Côte de boeuf Angus</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Et sa purée de panais</p>
+                            <p class="page__content__bloc__food__dsc__price">44€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page__content__bloc page__content__bloc--desserts"> <!-- Desserts -->
+                <h2 class="page__content__bloc__h2">DESSERTS</h2>
+                
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Farandole de desserts</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Du chef</p>
+                            <p class="page__content__bloc__food__dsc__price">18€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Crème brulée</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">Revisitée</p>
+                            <p class="page__content__bloc__food__dsc__price">22€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="page__content__bloc__food">
+                    <div class="page__content__bloc__food__txt">
+                        <h3>Tiramisu</h3>
+                        <div class="page__content__bloc__food__txt__dsc">
+                            <p class="page__content__bloc__food__dsc__dsc">À la noisette</p>
+                            <p class="page__content__bloc__food__dsc__price">23€</p>
+                        </div>
+                    </div>
+                    <div class="page__content__bloc__food__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page__content__btn">
+                <button class="page__content__btn__btn">
+                    <span class="page__content__btn__btn__txt">Commander</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <a href="/index.html"><h1 class="footer__title">ohmyfood</h1></a>
@@ -20,7 +159,7 @@
             <li><a href="#" class="footer__list--bold"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
             <li><a href="#" class="footer__list--bold"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
 </body>

@@ -1,13 +1,16 @@
 @import "./utils/variables";
 @import "./Utils/fonctions";
 @import "./Utils/mixins";
+@import "./Utils/keyframes";
 @import "./Base/typography";
 @import "./Base/base";
 @import "./Composants/button";
 @import "./Composants/heart";
+@import "./Composants/loader";
 @import "./Layout/header";
 @import "./Layout/nav";
 @import "./Layout/footer";
 @import "./Pages/accueil";
+@import "./Pages/restaurants"
 
 

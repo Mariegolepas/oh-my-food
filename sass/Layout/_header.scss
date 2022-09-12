@@ -2,6 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     height: 65px;
     width: 100%;
+}
+
+.header i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+    color: $black;
 }

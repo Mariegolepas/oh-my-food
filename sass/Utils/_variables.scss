@@ -8,3 +8,29 @@ $grey : darken($white, 10%);
 $grey-smooth : darken($white, 20%);
 $middle-grey : darken($white, 40%);
 $dark-grey : lighten($black, 20%);
+
+$breakpoints: (
+    mobile: 769px,
+    tablette: 992px,
+    desktop: 993px
+);
+
+$visibility-delay: (
+    entry: 0.2s,
+    plats: 0.7s,
+    desserts: 1.2s
+);
+
+$visibility-animation : 1s;
+
+$loading: (
+    primary: 0.2s,
+    secondary: 0.4s,
+    tertiary: 0.6s
+);
+
+$loading-color: (
+    primary: $color-primary,
+    secondary: $color-secondary,
+    tertiary: $color-tertiary
+);

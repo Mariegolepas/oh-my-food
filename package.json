@@ -4,7 +4,8 @@
   "description": "project oh-my-food for openclassroom by Mariegolepas",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "keywords": [
     "oh",
@@ -12,5 +13,6 @@
     "food"
   ],
   "author": "Mariegolepas",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
