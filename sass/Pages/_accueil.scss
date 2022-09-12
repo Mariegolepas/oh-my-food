@@ -158,10 +158,6 @@
 .center__fctmt__bloc__center__txt {
     font-weight: bold;
     word-wrap: break-word;
-    
-    @include desktop {
-        padding: auto;
-    }
 }
 
 /* Section Restaurant */
