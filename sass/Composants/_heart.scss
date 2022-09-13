@@ -3,8 +3,10 @@
     position: absolute;
     right: 25px;
     top: 25px;
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    align-items: center;
 }
 
 .resto__card__heart__empty {
@@ -16,7 +18,7 @@
 .resto__card__heart__full {
     transform: scale(0,0);
     z-index: 2;
-    font-size: 25px;
+    font-size: 28px;
     color: transparent;
     background: linear-gradient(to bottom left, $color-primary, $color-secondary);
     background-clip: text;
@@ -24,7 +26,8 @@
 }
 
 .resto__card__heart:hover .resto__card__heart__full {
-    transform: scale(1.5,1.5);
+    transform: scale(1,1);
+    color: $color-secondary;
     transition: all 2s ease-in;
     animation: animcoeur 0.5s ease-in-out forwards;
     cursor: pointer;
